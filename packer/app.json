@@ -1,0 +1,50 @@
+{
+    "variables": {
+      "aws_access_key": "{{env `AWS_ACCESS_KEY_ID`}}",
+      "aws_secret_key": "{{env `AWS_SECRET_ACCESS_KEY`}}",
+      "region": "eu-west-1"
+    },
+    "builders": [
+      {
+        "access_key": "{{user `aws_access_key`}}",
+        "ami_name": "adevinta-app-{{timestamp}}",
+        "instance_type": "t2.micro",
+        "region": "{{user `region`}}",
+        "secret_key": "{{user `aws_secret_key`}}",
+        "source_ami": "ami-0ea3405d2d2522162",
+ 
+        "ssh_username": "ec2-user",
+        "type": "amazon-ebs"
+      }
+    ],
+    "provisioners": [
+      {
+        "type": "file",
+        "source": "./jar/helloworld.jar",
+        "destination": "/tmp/"
+      },  
+      {
+        "type": "file",
+        "source": "./systemd/helloworld.sh",
+        "destination": "/tmp/"
+      },        
+      {
+        "type": "file",
+        "source": "./systemd/helloworld.service",
+        "destination": "/tmp/"
+      },
+      {
+        "type": "file",
+        "source": "./awslogs/app_awslogs.conf",
+        "destination": "/tmp/"
+      },  
+      {
+        "type": "shell",
+        "inline": ["sudo yum -y update;sudo yum install -y awslogs java-1.8.0-openjdk"]
+      },    
+      {
+        "type": "shell",
+        "script": "./install.sh"
+      }
+    ]
+  }

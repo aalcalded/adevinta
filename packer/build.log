@@ -1,0 +1,585 @@
+1590954522,,ui,say,==> amazon-ebs: Prevalidating any provided VPC information
+1590954522,,ui,say,==> amazon-ebs: Prevalidating AMI Name: adevinta-app-1590954521
+1590954523,,ui,message,    amazon-ebs: Found Image ID: ami-0ea3405d2d2522162
+1590954523,,ui,say,==> amazon-ebs: Creating temporary keypair: packer_5ed40a19-f7f9-981b-3aa6-b7cdb896dadd
+1590954523,,ui,say,==> amazon-ebs: Creating temporary security group for this instance: packer_5ed40a1b-28a5-82fd-4b08-90f08a119996
+1590954525,,ui,say,==> amazon-ebs: Authorizing access to port 22 from [0.0.0.0/0] in the temporary security groups...
+1590954525,,ui,say,==> amazon-ebs: Launching a source AWS instance...
+1590954525,,ui,say,==> amazon-ebs: Adding tags to source instance
+1590954525,,ui,message,    amazon-ebs: Adding tag: "Name": "Packer Builder"
+1590954527,,ui,message,    amazon-ebs: Instance ID: i-08a30db886db05469
+1590954527,,ui,say,==> amazon-ebs: Waiting for instance (i-08a30db886db05469) to become ready...
+1590954558,,ui,say,==> amazon-ebs: Using ssh communicator to connect: 34.245.191.79
+1590954558,,ui,say,==> amazon-ebs: Waiting for SSH to become available...
+1590954565,,ui,say,==> amazon-ebs: Connected to SSH!
+1590954565,,ui,say,==> amazon-ebs: Uploading ./jar/helloworld.jar => /tmp/
+helloworld.jar 544.00 KiB / 17.51 MiB [=>--------------------------------------------------]   3.03% 00m06s
+[1Ahelloworld.jar 800.00 KiB / 17.51 MiB [==>-------------------------------------------------]   4.46% 00m08s
+[1Ahelloworld.jar 3.28 MiB / 17.51 MiB [==========>-------------------------------------------]  18.74% 00m02s
+[1Ahelloworld.jar 7.03 MiB / 17.51 MiB [=====================>--------------------------------]  40.16% 00m01s
+[1Ahelloworld.jar 11.91 MiB / 17.51 MiB [========================================>-------------------]  68.01%
+[1Ahelloworld.jar 15.53 MiB / 17.51 MiB [=====================================================>------]  88.72%
+[1Ahelloworld.jar 15.53 MiB / 17.51 MiB [=====================================================>------]  88.72%
+[1Ahelloworld.jar 15.53 MiB / 17.51 MiB [=====================================================>------]  88.72%
+[1Ahelloworld.jar 15.53 MiB / 17.51 MiB [=====================================================>------]  88.72%
+[1Ahelloworld.jar 15.53 MiB / 17.51 MiB [=====================================================>------]  88.72%
+[1Ahelloworld.jar 15.53 MiB / 17.51 MiB [=====================================================>------]  88.72%
+[1Ahelloworld.jar 15.53 MiB / 17.51 MiB [=====================================================>------]  88.72%
+[1Ahelloworld.jar 15.53 MiB / 17.51 MiB [=====================================================>------]  88.72%
+[1Ahelloworld.jar 15.66 MiB / 17.51 MiB [=====================================================>------]  89.43%
+[1Ahelloworld.jar 15.66 MiB / 17.51 MiB [=====================================================>------]  89.43%
+[1Ahelloworld.jar 15.66 MiB / 17.51 MiB [=====================================================>------]  89.43%
+[1Ahelloworld.jar 15.66 MiB / 17.51 MiB [=====================================================>------]  89.43%
+[1Ahelloworld.jar 15.69 MiB / 17.51 MiB [=====================================================>------]  89.61%
+[1Ahelloworld.jar 15.78 MiB / 17.51 MiB [======================================================>-----]  90.14%
+[1Ahelloworld.jar 15.78 MiB / 17.51 MiB [======================================================>-----]  90.14%
+[1Ahelloworld.jar 15.78 MiB / 17.51 MiB [======================================================>-----]  90.14%
+[1Ahelloworld.jar 15.78 MiB / 17.51 MiB [======================================================>-----]  90.14%
+[1Ahelloworld.jar 15.91 MiB / 17.51 MiB [======================================================>-----]  90.86%
+[1Ahelloworld.jar 15.91 MiB / 17.51 MiB [======================================================>-----]  90.86%
+[1Ahelloworld.jar 15.91 MiB / 17.51 MiB [======================================================>-----]  90.86%
+[1Ahelloworld.jar 15.91 MiB / 17.51 MiB [======================================================>-----]  90.86%
+[1Ahelloworld.jar 15.91 MiB / 17.51 MiB [======================================================>-----]  90.86%
+[1Ahelloworld.jar 16.03 MiB / 17.51 MiB [======================================================>-----]  91.57%
+[1Ahelloworld.jar 16.03 MiB / 17.51 MiB [======================================================>-----]  91.57%
+[1Ahelloworld.jar 16.03 MiB / 17.51 MiB [======================================================>-----]  91.57%
+[1Ahelloworld.jar 16.03 MiB / 17.51 MiB [======================================================>-----]  91.57%
+[1Ahelloworld.jar 16.03 MiB / 17.51 MiB [======================================================>-----]  91.57%
+[1Ahelloworld.jar 16.16 MiB / 17.51 MiB [=======================================================>----]  92.29%
+[1Ahelloworld.jar 16.16 MiB / 17.51 MiB [=======================================================>----]  92.29%
+[1Ahelloworld.jar 16.16 MiB / 17.51 MiB [=======================================================>----]  92.29%
+[1Ahelloworld.jar 16.16 MiB / 17.51 MiB [=======================================================>----]  92.29%
+[1Ahelloworld.jar 16.28 MiB / 17.51 MiB [=======================================================>----]  93.00%
+[1Ahelloworld.jar 16.28 MiB / 17.51 MiB [=======================================================>----]  93.00%
+[1Ahelloworld.jar 16.28 MiB / 17.51 MiB [=======================================================>----]  93.00%
+[1Ahelloworld.jar 16.28 MiB / 17.51 MiB [=======================================================>----]  93.00%
+[1Ahelloworld.jar 16.28 MiB / 17.51 MiB [=======================================================>----]  93.00%
+[1Ahelloworld.jar 16.41 MiB / 17.51 MiB [========================================================>---]  93.71%
+[1Ahelloworld.jar 16.41 MiB / 17.51 MiB [========================================================>---]  93.71%
+[1Ahelloworld.jar 16.41 MiB / 17.51 MiB [========================================================>---]  93.71%
+[1Ahelloworld.jar 16.41 MiB / 17.51 MiB [========================================================>---]  93.71%
+[1Ahelloworld.jar 16.41 MiB / 17.51 MiB [========================================================>---]  93.71%
+[1Ahelloworld.jar 16.53 MiB / 17.51 MiB [========================================================>---]  94.43%
+[1Ahelloworld.jar 16.53 MiB / 17.51 MiB [========================================================>---]  94.43%
+[1Ahelloworld.jar 16.53 MiB / 17.51 MiB [========================================================>---]  94.43%
+[1Ahelloworld.jar 16.53 MiB / 17.51 MiB [========================================================>---]  94.43%
+[1Ahelloworld.jar 16.66 MiB / 17.51 MiB [=========================================================>--]  95.14%
+[1Ahelloworld.jar 16.66 MiB / 17.51 MiB [=========================================================>--]  95.14%
+[1Ahelloworld.jar 16.66 MiB / 17.51 MiB [=========================================================>--]  95.14%
+[1Ahelloworld.jar 16.66 MiB / 17.51 MiB [=========================================================>--]  95.14%
+[1Ahelloworld.jar 16.66 MiB / 17.51 MiB [=========================================================>--]  95.14%
+[1Ahelloworld.jar 16.78 MiB / 17.51 MiB [=========================================================>--]  95.86%
+[1Ahelloworld.jar 16.78 MiB / 17.51 MiB [=========================================================>--]  95.86%
+[1Ahelloworld.jar 16.78 MiB / 17.51 MiB [=========================================================>--]  95.86%
+[1Ahelloworld.jar 16.78 MiB / 17.51 MiB [=========================================================>--]  95.86%
+[1Ahelloworld.jar 16.78 MiB / 17.51 MiB [=========================================================>--]  95.86%
+[1Ahelloworld.jar 16.91 MiB / 17.51 MiB [=========================================================>--]  96.57%
+[1Ahelloworld.jar 16.91 MiB / 17.51 MiB [=========================================================>--]  96.57%
+[1Ahelloworld.jar 16.91 MiB / 17.51 MiB [=========================================================>--]  96.57%
+[1Ahelloworld.jar 16.91 MiB / 17.51 MiB [=========================================================>--]  96.57%
+[1Ahelloworld.jar 16.91 MiB / 17.51 MiB [=========================================================>--]  96.57%
+[1Ahelloworld.jar 17.03 MiB / 17.51 MiB [==========================================================>-]  97.28%
+[1Ahelloworld.jar 17.03 MiB / 17.51 MiB [==========================================================>-]  97.28%
+[1Ahelloworld.jar 17.03 MiB / 17.51 MiB [==========================================================>-]  97.28%
+[1Ahelloworld.jar 17.03 MiB / 17.51 MiB [==========================================================>-]  97.28%
+[1Ahelloworld.jar 17.03 MiB / 17.51 MiB [==========================================================>-]  97.28%
+[1Ahelloworld.jar 17.16 MiB / 17.51 MiB [==========================================================>-]  98.00%
+[1Ahelloworld.jar 17.16 MiB / 17.51 MiB [==========================================================>-]  98.00%
+[1Ahelloworld.jar 17.28 MiB / 17.51 MiB [============================================================]  98.71%
+[1Ahelloworld.jar 17.28 MiB / 17.51 MiB [============================================================]  98.71%
+[1Ahelloworld.jar 17.41 MiB / 17.51 MiB [============================================================]  99.43%
+[1Ahelloworld.jar 17.51 MiB / 17.51 MiB [============================================================] 100.00%
+[1Ahelloworld.jar 17.51 MiB / 17.51 MiB [============================================================] 100.00%
+[1Ahelloworld.jar 17.51 MiB / 17.51 MiB [============================================================] 100.00%
+[1Ahelloworld.jar 17.51 MiB / 17.51 MiB [============================================================] 100.00%
+[1Ahelloworld.jar 17.51 MiB / 17.51 MiB [============================================================] 100.00%
+[1Ahelloworld.jar 17.51 MiB / 17.51 MiB [============================================================] 100.00%
+[1Ahelloworld.jar 17.51 MiB / 17.51 MiB [============================================================] 100.00%
+[1Ahelloworld.jar 17.51 MiB / 17.51 MiB [============================================================] 100.00%
+[1Ahelloworld.jar 17.51 MiB / 17.51 MiB [============================================================] 100.00%
+[1Ahelloworld.jar 17.51 MiB / 17.51 MiB [============================================================] 100.00%
+[1Ahelloworld.jar 17.51 MiB / 17.51 MiB [========================================================] 100.00% 17s
+1590954582,,ui,say,==> amazon-ebs: Uploading ./systemd/helloworld.sh => /tmp/
+helloworld.sh 2.09 KiB / 2.09 KiB [===============================================================] 100.00%
+[1Ahelloworld.sh 2.09 KiB / 2.09 KiB [============================================================] 100.00% 0s
+1590954583,,ui,say,==> amazon-ebs: Uploading ./systemd/helloworld.service => /tmp/
+helloworld.service 220 B / 220 B [================================================================] 100.00%
+[1Ahelloworld.service 220 B / 220 B [=============================================================] 100.00% 0s
+1590954583,,ui,say,==> amazon-ebs: Uploading ./awslogs/app_awslogs.conf => /tmp/
+app_awslogs.conf 457 B / 457 B [==================================================================] 100.00%
+[1Aapp_awslogs.conf 457 B / 457 B [===============================================================] 100.00% 0s
+1590954583,,ui,say,==> amazon-ebs: Provisioning with shell script: /tmp/packer-shell571679078
+1590954584,,ui,message,    amazon-ebs: Loaded plugins: extras_suggestions%!(PACKER_COMMA) langpacks%!(PACKER_COMMA) priorities%!(PACKER_COMMA) update-motd
+1590954585,,ui,message,    amazon-ebs: No packages marked for update
+1590954585,,ui,message,    amazon-ebs: Loaded plugins: extras_suggestions%!(PACKER_COMMA) langpacks%!(PACKER_COMMA) priorities%!(PACKER_COMMA) update-motd
+1590954586,,ui,message,    amazon-ebs: Resolving Dependencies
+1590954586,,ui,message,    amazon-ebs: --> Running transaction check
+1590954586,,ui,message,    amazon-ebs: ---> Package awslogs.noarch 0:1.1.4-3.amzn2 will be installed
+1590954586,,ui,message,    amazon-ebs: --> Processing Dependency: aws-cli-plugin-cloudwatch-logs for package: awslogs-1.1.4-3.amzn2.noarch
+1590954586,,ui,message,    amazon-ebs: ---> Package java-1.8.0-openjdk.x86_64 1:1.8.0.252.b09-2.amzn2.0.1 will be installed
+1590954586,,ui,message,    amazon-ebs: --> Processing Dependency: java-1.8.0-openjdk-headless(x86-64) = 1:1.8.0.252.b09-2.amzn2.0.1 for package: 1:java-1.8.0-openjdk-1.8.0.252.b09-2.amzn2.0.1.x86_64
+1590954586,,ui,message,    amazon-ebs: --> Processing Dependency: xorg-x11-fonts-Type1 for package: 1:java-1.8.0-openjdk-1.8.0.252.b09-2.amzn2.0.1.x86_64
+1590954586,,ui,message,    amazon-ebs: --> Processing Dependency: libjvm.so(SUNWprivate_1.1)(64bit) for package: 1:java-1.8.0-openjdk-1.8.0.252.b09-2.amzn2.0.1.x86_64
+1590954586,,ui,message,    amazon-ebs: --> Processing Dependency: libjava.so(SUNWprivate_1.1)(64bit) for package: 1:java-1.8.0-openjdk-1.8.0.252.b09-2.amzn2.0.1.x86_64
+1590954586,,ui,message,    amazon-ebs: --> Processing Dependency: libasound.so.2(ALSA_0.9.0rc4)(64bit) for package: 1:java-1.8.0-openjdk-1.8.0.252.b09-2.amzn2.0.1.x86_64
+1590954586,,ui,message,    amazon-ebs: --> Processing Dependency: libasound.so.2(ALSA_0.9)(64bit) for package: 1:java-1.8.0-openjdk-1.8.0.252.b09-2.amzn2.0.1.x86_64
+1590954586,,ui,message,    amazon-ebs: --> Processing Dependency: libXcomposite(x86-64) for package: 1:java-1.8.0-openjdk-1.8.0.252.b09-2.amzn2.0.1.x86_64
+1590954586,,ui,message,    amazon-ebs: --> Processing Dependency: gtk2(x86-64) for package: 1:java-1.8.0-openjdk-1.8.0.252.b09-2.amzn2.0.1.x86_64
+1590954586,,ui,message,    amazon-ebs: --> Processing Dependency: fontconfig(x86-64) for package: 1:java-1.8.0-openjdk-1.8.0.252.b09-2.amzn2.0.1.x86_64
+1590954586,,ui,message,    amazon-ebs: --> Processing Dependency: libjvm.so()(64bit) for package: 1:java-1.8.0-openjdk-1.8.0.252.b09-2.amzn2.0.1.x86_64
+1590954586,,ui,message,    amazon-ebs: --> Processing Dependency: libjava.so()(64bit) for package: 1:java-1.8.0-openjdk-1.8.0.252.b09-2.amzn2.0.1.x86_64
+1590954586,,ui,message,    amazon-ebs: --> Processing Dependency: libgif.so.4()(64bit) for package: 1:java-1.8.0-openjdk-1.8.0.252.b09-2.amzn2.0.1.x86_64
+1590954586,,ui,message,    amazon-ebs: --> Processing Dependency: libasound.so.2()(64bit) for package: 1:java-1.8.0-openjdk-1.8.0.252.b09-2.amzn2.0.1.x86_64
+1590954586,,ui,message,    amazon-ebs: --> Processing Dependency: libXtst.so.6()(64bit) for package: 1:java-1.8.0-openjdk-1.8.0.252.b09-2.amzn2.0.1.x86_64
+1590954586,,ui,message,    amazon-ebs: --> Processing Dependency: libXrender.so.1()(64bit) for package: 1:java-1.8.0-openjdk-1.8.0.252.b09-2.amzn2.0.1.x86_64
+1590954586,,ui,message,    amazon-ebs: --> Processing Dependency: libXi.so.6()(64bit) for package: 1:java-1.8.0-openjdk-1.8.0.252.b09-2.amzn2.0.1.x86_64
+1590954586,,ui,message,    amazon-ebs: --> Processing Dependency: libXext.so.6()(64bit) for package: 1:java-1.8.0-openjdk-1.8.0.252.b09-2.amzn2.0.1.x86_64
+1590954586,,ui,message,    amazon-ebs: --> Processing Dependency: libX11.so.6()(64bit) for package: 1:java-1.8.0-openjdk-1.8.0.252.b09-2.amzn2.0.1.x86_64
+1590954586,,ui,message,    amazon-ebs: --> Running transaction check
+1590954586,,ui,message,    amazon-ebs: ---> Package alsa-lib.x86_64 0:1.1.4.1-2.amzn2 will be installed
+1590954586,,ui,message,    amazon-ebs: ---> Package aws-cli-plugin-cloudwatch-logs.noarch 0:1.4.6-1.amzn2.0.1 will be installed
+1590954586,,ui,message,    amazon-ebs: ---> Package fontconfig.x86_64 0:2.13.0-4.3.amzn2 will be installed
+1590954586,,ui,message,    amazon-ebs: --> Processing Dependency: fontpackages-filesystem for package: fontconfig-2.13.0-4.3.amzn2.x86_64
+1590954586,,ui,message,    amazon-ebs: --> Processing Dependency: dejavu-sans-fonts for package: fontconfig-2.13.0-4.3.amzn2.x86_64
+1590954586,,ui,message,    amazon-ebs: ---> Package giflib.x86_64 0:4.1.6-9.amzn2.0.2 will be installed
+1590954586,,ui,message,    amazon-ebs: --> Processing Dependency: libSM.so.6()(64bit) for package: giflib-4.1.6-9.amzn2.0.2.x86_64
+1590954586,,ui,message,    amazon-ebs: --> Processing Dependency: libICE.so.6()(64bit) for package: giflib-4.1.6-9.amzn2.0.2.x86_64
+1590954586,,ui,message,    amazon-ebs: ---> Package gtk2.x86_64 0:2.24.31-1.amzn2.0.2 will be installed
+1590954586,,ui,message,    amazon-ebs: --> Processing Dependency: pango >= 1.20.0-1 for package: gtk2-2.24.31-1.amzn2.0.2.x86_64
+1590954586,,ui,message,    amazon-ebs: --> Processing Dependency: libXrandr >= 1.2.99.4-2 for package: gtk2-2.24.31-1.amzn2.0.2.x86_64
+1590954586,,ui,message,    amazon-ebs: --> Processing Dependency: atk >= 1.29.4-2 for package: gtk2-2.24.31-1.amzn2.0.2.x86_64
+1590954586,,ui,message,    amazon-ebs: --> Processing Dependency: hicolor-icon-theme for package: gtk2-2.24.31-1.amzn2.0.2.x86_64
+1590954586,,ui,message,    amazon-ebs: --> Processing Dependency: gtk-update-icon-cache for package: gtk2-2.24.31-1.amzn2.0.2.x86_64
+1590954586,,ui,message,    amazon-ebs: --> Processing Dependency: libpangoft2-1.0.so.0()(64bit) for package: gtk2-2.24.31-1.amzn2.0.2.x86_64
+1590954586,,ui,message,    amazon-ebs: --> Processing Dependency: libpangocairo-1.0.so.0()(64bit) for package: gtk2-2.24.31-1.amzn2.0.2.x86_64
+1590954586,,ui,message,    amazon-ebs: --> Processing Dependency: libpango-1.0.so.0()(64bit) for package: gtk2-2.24.31-1.amzn2.0.2.x86_64
+1590954586,,ui,message,    amazon-ebs: --> Processing Dependency: libgdk_pixbuf-2.0.so.0()(64bit) for package: gtk2-2.24.31-1.amzn2.0.2.x86_64
+1590954586,,ui,message,    amazon-ebs: --> Processing Dependency: libcups.so.2()(64bit) for package: gtk2-2.24.31-1.amzn2.0.2.x86_64
+1590954586,,ui,message,    amazon-ebs: --> Processing Dependency: libcairo.so.2()(64bit) for package: gtk2-2.24.31-1.amzn2.0.2.x86_64
+1590954586,,ui,message,    amazon-ebs: --> Processing Dependency: libatk-1.0.so.0()(64bit) for package: gtk2-2.24.31-1.amzn2.0.2.x86_64
+1590954586,,ui,message,    amazon-ebs: --> Processing Dependency: libXrandr.so.2()(64bit) for package: gtk2-2.24.31-1.amzn2.0.2.x86_64
+1590954586,,ui,message,    amazon-ebs: --> Processing Dependency: libXinerama.so.1()(64bit) for package: gtk2-2.24.31-1.amzn2.0.2.x86_64
+1590954586,,ui,message,    amazon-ebs: --> Processing Dependency: libXfixes.so.3()(64bit) for package: gtk2-2.24.31-1.amzn2.0.2.x86_64
+1590954586,,ui,message,    amazon-ebs: --> Processing Dependency: libXdamage.so.1()(64bit) for package: gtk2-2.24.31-1.amzn2.0.2.x86_64
+1590954586,,ui,message,    amazon-ebs: --> Processing Dependency: libXcursor.so.1()(64bit) for package: gtk2-2.24.31-1.amzn2.0.2.x86_64
+1590954586,,ui,message,    amazon-ebs: ---> Package java-1.8.0-openjdk-headless.x86_64 1:1.8.0.252.b09-2.amzn2.0.1 will be installed
+1590954586,,ui,message,    amazon-ebs: --> Processing Dependency: tzdata-java >= 2015d for package: 1:java-1.8.0-openjdk-headless-1.8.0.252.b09-2.amzn2.0.1.x86_64
+1590954586,,ui,message,    amazon-ebs: --> Processing Dependency: copy-jdk-configs >= 3.3 for package: 1:java-1.8.0-openjdk-headless-1.8.0.252.b09-2.amzn2.0.1.x86_64
+1590954586,,ui,message,    amazon-ebs: --> Processing Dependency: pcsc-lite-libs(x86-64) for package: 1:java-1.8.0-openjdk-headless-1.8.0.252.b09-2.amzn2.0.1.x86_64
+1590954586,,ui,message,    amazon-ebs: --> Processing Dependency: lksctp-tools(x86-64) for package: 1:java-1.8.0-openjdk-headless-1.8.0.252.b09-2.amzn2.0.1.x86_64
+1590954586,,ui,message,    amazon-ebs: --> Processing Dependency: jpackage-utils for package: 1:java-1.8.0-openjdk-headless-1.8.0.252.b09-2.amzn2.0.1.x86_64
+1590954586,,ui,message,    amazon-ebs: ---> Package libX11.x86_64 0:1.6.7-2.amzn2 will be installed
+1590954586,,ui,message,    amazon-ebs: --> Processing Dependency: libX11-common >= 1.6.7-2.amzn2 for package: libX11-1.6.7-2.amzn2.x86_64
+1590954586,,ui,message,    amazon-ebs: --> Processing Dependency: libxcb.so.1()(64bit) for package: libX11-1.6.7-2.amzn2.x86_64
+1590954586,,ui,message,    amazon-ebs: ---> Package libXcomposite.x86_64 0:0.4.4-4.1.amzn2.0.2 will be installed
+1590954586,,ui,message,    amazon-ebs: ---> Package libXext.x86_64 0:1.3.3-3.amzn2.0.2 will be installed
+1590954586,,ui,message,    amazon-ebs: ---> Package libXi.x86_64 0:1.7.9-1.amzn2.0.2 will be installed
+1590954586,,ui,message,    amazon-ebs: ---> Package libXrender.x86_64 0:0.9.10-1.amzn2.0.2 will be installed
+1590954586,,ui,message,    amazon-ebs: ---> Package libXtst.x86_64 0:1.2.3-1.amzn2.0.2 will be installed
+1590954586,,ui,message,    amazon-ebs: ---> Package xorg-x11-fonts-Type1.noarch 0:7.5-9.amzn2 will be installed
+1590954586,,ui,message,    amazon-ebs: --> Processing Dependency: ttmkfdir for package: xorg-x11-fonts-Type1-7.5-9.amzn2.noarch
+1590954586,,ui,message,    amazon-ebs: --> Processing Dependency: ttmkfdir for package: xorg-x11-fonts-Type1-7.5-9.amzn2.noarch
+1590954586,,ui,message,    amazon-ebs: --> Processing Dependency: mkfontdir for package: xorg-x11-fonts-Type1-7.5-9.amzn2.noarch
+1590954586,,ui,message,    amazon-ebs: --> Processing Dependency: mkfontdir for package: xorg-x11-fonts-Type1-7.5-9.amzn2.noarch
+1590954586,,ui,message,    amazon-ebs: --> Running transaction check
+1590954586,,ui,message,    amazon-ebs: ---> Package atk.x86_64 0:2.22.0-3.amzn2.0.2 will be installed
+1590954586,,ui,message,    amazon-ebs: ---> Package cairo.x86_64 0:1.15.12-4.amzn2 will be installed
+1590954586,,ui,message,    amazon-ebs: --> Processing Dependency: libpixman-1.so.0()(64bit) for package: cairo-1.15.12-4.amzn2.x86_64
+1590954586,,ui,message,    amazon-ebs: --> Processing Dependency: libGL.so.1()(64bit) for package: cairo-1.15.12-4.amzn2.x86_64
+1590954586,,ui,message,    amazon-ebs: --> Processing Dependency: libEGL.so.1()(64bit) for package: cairo-1.15.12-4.amzn2.x86_64
+1590954586,,ui,message,    amazon-ebs: ---> Package copy-jdk-configs.noarch 0:3.3-10.amzn2 will be installed
+1590954586,,ui,message,    amazon-ebs: ---> Package cups-libs.x86_64 1:1.6.3-40.amzn2 will be installed
+1590954586,,ui,message,    amazon-ebs: --> Processing Dependency: libavahi-common.so.3()(64bit) for package: 1:cups-libs-1.6.3-40.amzn2.x86_64
+1590954586,,ui,message,    amazon-ebs: --> Processing Dependency: libavahi-client.so.3()(64bit) for package: 1:cups-libs-1.6.3-40.amzn2.x86_64
+1590954586,,ui,message,    amazon-ebs: ---> Package dejavu-sans-fonts.noarch 0:2.33-6.amzn2 will be installed
+1590954586,,ui,message,    amazon-ebs: --> Processing Dependency: dejavu-fonts-common = 2.33-6.amzn2 for package: dejavu-sans-fonts-2.33-6.amzn2.noarch
+1590954586,,ui,message,    amazon-ebs: ---> Package fontpackages-filesystem.noarch 0:1.44-8.amzn2 will be installed
+1590954586,,ui,message,    amazon-ebs: ---> Package gdk-pixbuf2.x86_64 0:2.36.12-3.amzn2 will be installed
+1590954586,,ui,message,    amazon-ebs: --> Processing Dependency: libjasper.so.1()(64bit) for package: gdk-pixbuf2-2.36.12-3.amzn2.x86_64
+1590954586,,ui,message,    amazon-ebs: ---> Package gtk-update-icon-cache.x86_64 0:3.22.30-3.amzn2 will be installed
+1590954586,,ui,message,    amazon-ebs: ---> Package hicolor-icon-theme.noarch 0:0.12-7.amzn2 will be installed
+1590954586,,ui,message,    amazon-ebs: ---> Package javapackages-tools.noarch 0:3.4.1-11.amzn2 will be installed
+1590954586,,ui,message,    amazon-ebs: --> Processing Dependency: python-javapackages = 3.4.1-11.amzn2 for package: javapackages-tools-3.4.1-11.amzn2.noarch
+1590954586,,ui,message,    amazon-ebs: --> Processing Dependency: libxslt for package: javapackages-tools-3.4.1-11.amzn2.noarch
+1590954586,,ui,message,    amazon-ebs: ---> Package libICE.x86_64 0:1.0.9-9.amzn2.0.2 will be installed
+1590954586,,ui,message,    amazon-ebs: ---> Package libSM.x86_64 0:1.2.2-2.amzn2.0.2 will be installed
+1590954586,,ui,message,    amazon-ebs: ---> Package libX11-common.noarch 0:1.6.7-2.amzn2 will be installed
+1590954586,,ui,message,    amazon-ebs: ---> Package libXcursor.x86_64 0:1.1.15-1.amzn2 will be installed
+1590954586,,ui,message,    amazon-ebs: ---> Package libXdamage.x86_64 0:1.1.4-4.1.amzn2.0.2 will be installed
+1590954586,,ui,message,    amazon-ebs: ---> Package libXfixes.x86_64 0:5.0.3-1.amzn2.0.2 will be installed
+1590954586,,ui,message,    amazon-ebs: ---> Package libXinerama.x86_64 0:1.1.3-2.1.amzn2.0.2 will be installed
+1590954586,,ui,message,    amazon-ebs: ---> Package libXrandr.x86_64 0:1.5.1-2.amzn2.0.3 will be installed
+1590954586,,ui,message,    amazon-ebs: ---> Package libxcb.x86_64 0:1.12-1.amzn2.0.2 will be installed
+1590954586,,ui,message,    amazon-ebs: --> Processing Dependency: libXau.so.6()(64bit) for package: libxcb-1.12-1.amzn2.0.2.x86_64
+1590954586,,ui,message,    amazon-ebs: ---> Package lksctp-tools.x86_64 0:1.0.17-2.amzn2.0.2 will be installed
+1590954586,,ui,message,    amazon-ebs: ---> Package pango.x86_64 0:1.42.4-4.amzn2 will be installed
+1590954586,,ui,message,    amazon-ebs: --> Processing Dependency: libthai(x86-64) >= 0.1.9 for package: pango-1.42.4-4.amzn2.x86_64
+1590954586,,ui,message,    amazon-ebs: --> Processing Dependency: libXft(x86-64) >= 2.0.0 for package: pango-1.42.4-4.amzn2.x86_64
+1590954586,,ui,message,    amazon-ebs: --> Processing Dependency: harfbuzz(x86-64) >= 1.4.2 for package: pango-1.42.4-4.amzn2.x86_64
+1590954586,,ui,message,    amazon-ebs: --> Processing Dependency: fribidi(x86-64) >= 1.0 for package: pango-1.42.4-4.amzn2.x86_64
+1590954586,,ui,message,    amazon-ebs: --> Processing Dependency: libthai.so.0(LIBTHAI_0.1)(64bit) for package: pango-1.42.4-4.amzn2.x86_64
+1590954586,,ui,message,    amazon-ebs: --> Processing Dependency: libthai.so.0()(64bit) for package: pango-1.42.4-4.amzn2.x86_64
+1590954586,,ui,message,    amazon-ebs: --> Processing Dependency: libharfbuzz.so.0()(64bit) for package: pango-1.42.4-4.amzn2.x86_64
+1590954586,,ui,message,    amazon-ebs: --> Processing Dependency: libfribidi.so.0()(64bit) for package: pango-1.42.4-4.amzn2.x86_64
+1590954586,,ui,message,    amazon-ebs: --> Processing Dependency: libXft.so.2()(64bit) for package: pango-1.42.4-4.amzn2.x86_64
+1590954586,,ui,message,    amazon-ebs: ---> Package pcsc-lite-libs.x86_64 0:1.8.8-7.amzn2 will be installed
+1590954586,,ui,message,    amazon-ebs: ---> Package ttmkfdir.x86_64 0:3.0.9-42.amzn2.0.2 will be installed
+1590954586,,ui,message,    amazon-ebs: ---> Package tzdata-java.noarch 0:2019c-1.amzn2 will be installed
+1590954586,,ui,message,    amazon-ebs: ---> Package xorg-x11-font-utils.x86_64 1:7.5-21.amzn2 will be installed
+1590954586,,ui,message,    amazon-ebs: --> Processing Dependency: libfontenc.so.1()(64bit) for package: 1:xorg-x11-font-utils-7.5-21.amzn2.x86_64
+1590954586,,ui,message,    amazon-ebs: --> Running transaction check
+1590954586,,ui,message,    amazon-ebs: ---> Package avahi-libs.x86_64 0:0.6.31-19.amzn2.0.1 will be installed
+1590954586,,ui,message,    amazon-ebs: ---> Package dejavu-fonts-common.noarch 0:2.33-6.amzn2 will be installed
+1590954586,,ui,message,    amazon-ebs: ---> Package fribidi.x86_64 0:1.0.2-1.amzn2.1 will be installed
+1590954586,,ui,message,    amazon-ebs: ---> Package harfbuzz.x86_64 0:1.7.5-2.amzn2 will be installed
+1590954586,,ui,message,    amazon-ebs: --> Processing Dependency: libgraphite2.so.3()(64bit) for package: harfbuzz-1.7.5-2.amzn2.x86_64
+1590954586,,ui,message,    amazon-ebs: ---> Package jasper-libs.x86_64 0:1.900.1-33.amzn2 will be installed
+1590954586,,ui,message,    amazon-ebs: ---> Package libXau.x86_64 0:1.0.8-2.1.amzn2.0.2 will be installed
+1590954586,,ui,message,    amazon-ebs: ---> Package libXft.x86_64 0:2.3.2-2.amzn2.0.2 will be installed
+1590954586,,ui,message,    amazon-ebs: ---> Package libfontenc.x86_64 0:1.1.3-3.amzn2.0.2 will be installed
+1590954586,,ui,message,    amazon-ebs: ---> Package libglvnd-egl.x86_64 1:1.0.1-0.1.git5baa1e5.amzn2.0.1 will be installed
+1590954586,,ui,message,    amazon-ebs: --> Processing Dependency: libglvnd(x86-64) = 1:1.0.1-0.1.git5baa1e5.amzn2.0.1 for package: 1:libglvnd-egl-1.0.1-0.1.git5baa1e5.amzn2.0.1.x86_64
+1590954586,,ui,message,    amazon-ebs: --> Processing Dependency: mesa-libEGL(x86-64) >= 13.0.4-1 for package: 1:libglvnd-egl-1.0.1-0.1.git5baa1e5.amzn2.0.1.x86_64
+1590954586,,ui,message,    amazon-ebs: --> Processing Dependency: libGLdispatch.so.0()(64bit) for package: 1:libglvnd-egl-1.0.1-0.1.git5baa1e5.amzn2.0.1.x86_64
+1590954586,,ui,message,    amazon-ebs: ---> Package libglvnd-glx.x86_64 1:1.0.1-0.1.git5baa1e5.amzn2.0.1 will be installed
+1590954586,,ui,message,    amazon-ebs: --> Processing Dependency: mesa-libGL(x86-64) >= 13.0.4-1 for package: 1:libglvnd-glx-1.0.1-0.1.git5baa1e5.amzn2.0.1.x86_64
+1590954586,,ui,message,    amazon-ebs: ---> Package libthai.x86_64 0:0.1.14-9.amzn2.0.2 will be installed
+1590954586,,ui,message,    amazon-ebs: ---> Package libxslt.x86_64 0:1.1.28-5.amzn2.0.2 will be installed
+1590954586,,ui,message,    amazon-ebs: ---> Package pixman.x86_64 0:0.34.0-1.amzn2.0.2 will be installed
+1590954586,,ui,message,    amazon-ebs: ---> Package python-javapackages.noarch 0:3.4.1-11.amzn2 will be installed
+1590954586,,ui,message,    amazon-ebs: --> Processing Dependency: python-lxml for package: python-javapackages-3.4.1-11.amzn2.noarch
+1590954586,,ui,message,    amazon-ebs: --> Running transaction check
+1590954586,,ui,message,    amazon-ebs: ---> Package graphite2.x86_64 0:1.3.10-1.amzn2.0.2 will be installed
+1590954586,,ui,message,    amazon-ebs: ---> Package libglvnd.x86_64 1:1.0.1-0.1.git5baa1e5.amzn2.0.1 will be installed
+1590954586,,ui,message,    amazon-ebs: ---> Package mesa-libEGL.x86_64 0:18.3.4-5.amzn2.0.1 will be installed
+1590954586,,ui,message,    amazon-ebs: --> Processing Dependency: mesa-libgbm = 18.3.4-5.amzn2.0.1 for package: mesa-libEGL-18.3.4-5.amzn2.0.1.x86_64
+1590954586,,ui,message,    amazon-ebs: --> Processing Dependency: libxshmfence.so.1()(64bit) for package: mesa-libEGL-18.3.4-5.amzn2.0.1.x86_64
+1590954586,,ui,message,    amazon-ebs: --> Processing Dependency: libwayland-server.so.0()(64bit) for package: mesa-libEGL-18.3.4-5.amzn2.0.1.x86_64
+1590954586,,ui,message,    amazon-ebs: --> Processing Dependency: libwayland-client.so.0()(64bit) for package: mesa-libEGL-18.3.4-5.amzn2.0.1.x86_64
+1590954586,,ui,message,    amazon-ebs: --> Processing Dependency: libglapi.so.0()(64bit) for package: mesa-libEGL-18.3.4-5.amzn2.0.1.x86_64
+1590954586,,ui,message,    amazon-ebs: --> Processing Dependency: libgbm.so.1()(64bit) for package: mesa-libEGL-18.3.4-5.amzn2.0.1.x86_64
+1590954586,,ui,message,    amazon-ebs: ---> Package mesa-libGL.x86_64 0:18.3.4-5.amzn2.0.1 will be installed
+1590954586,,ui,message,    amazon-ebs: --> Processing Dependency: libXxf86vm.so.1()(64bit) for package: mesa-libGL-18.3.4-5.amzn2.0.1.x86_64
+1590954586,,ui,message,    amazon-ebs: ---> Package python-lxml.x86_64 0:3.2.1-4.amzn2.0.2 will be installed
+1590954586,,ui,message,    amazon-ebs: --> Running transaction check
+1590954586,,ui,message,    amazon-ebs: ---> Package libXxf86vm.x86_64 0:1.1.4-1.amzn2.0.2 will be installed
+1590954586,,ui,message,    amazon-ebs: ---> Package libwayland-client.x86_64 0:1.17.0-1.amzn2 will be installed
+1590954586,,ui,message,    amazon-ebs: ---> Package libwayland-server.x86_64 0:1.17.0-1.amzn2 will be installed
+1590954586,,ui,message,    amazon-ebs: ---> Package libxshmfence.x86_64 0:1.2-1.amzn2.0.2 will be installed
+1590954586,,ui,message,    amazon-ebs: ---> Package mesa-libgbm.x86_64 0:18.3.4-5.amzn2.0.1 will be installed
+1590954586,,ui,message,    amazon-ebs: ---> Package mesa-libglapi.x86_64 0:18.3.4-5.amzn2.0.1 will be installed
+1590954586,,ui,message,    amazon-ebs: --> Finished Dependency Resolution
+1590954586,,ui,message,    amazon-ebs:
+1590954586,,ui,message,    amazon-ebs: Dependencies Resolved
+1590954586,,ui,message,    amazon-ebs:
+1590954586,,ui,message,    amazon-ebs: ================================================================================
+1590954586,,ui,message,    amazon-ebs:  Package               Arch   Version                          Repository  Size
+1590954586,,ui,message,    amazon-ebs: ================================================================================
+1590954586,,ui,message,    amazon-ebs: Installing:
+1590954586,,ui,message,    amazon-ebs:  awslogs               noarch 1.1.4-3.amzn2                    amzn2-core 8.2 k
+1590954586,,ui,message,    amazon-ebs:  java-1.8.0-openjdk    x86_64 1:1.8.0.252.b09-2.amzn2.0.1      amzn2-core 292 k
+1590954586,,ui,message,    amazon-ebs: Installing for dependencies:
+1590954586,,ui,message,    amazon-ebs:  alsa-lib              x86_64 1.1.4.1-2.amzn2                  amzn2-core 425 k
+1590954586,,ui,message,    amazon-ebs:  atk                   x86_64 2.22.0-3.amzn2.0.2               amzn2-core 258 k
+1590954586,,ui,message,    amazon-ebs:  avahi-libs            x86_64 0.6.31-19.amzn2.0.1              amzn2-core  61 k
+1590954586,,ui,message,    amazon-ebs:  aws-cli-plugin-cloudwatch-logs
+1590954586,,ui,message,    amazon-ebs:                        noarch 1.4.6-1.amzn2.0.1                amzn2-core  62 k
+1590954586,,ui,message,    amazon-ebs:  cairo                 x86_64 1.15.12-4.amzn2                  amzn2-core 732 k
+1590954586,,ui,message,    amazon-ebs:  copy-jdk-configs      noarch 3.3-10.amzn2                     amzn2-core  21 k
+1590954586,,ui,message,    amazon-ebs:  cups-libs             x86_64 1:1.6.3-40.amzn2                 amzn2-core 355 k
+1590954586,,ui,message,    amazon-ebs:  dejavu-fonts-common   noarch 2.33-6.amzn2                     amzn2-core  64 k
+1590954586,,ui,message,    amazon-ebs:  dejavu-sans-fonts     noarch 2.33-6.amzn2                     amzn2-core 1.4 M
+1590954586,,ui,message,    amazon-ebs:  fontconfig            x86_64 2.13.0-4.3.amzn2                 amzn2-core 253 k
+1590954586,,ui,message,    amazon-ebs:  fontpackages-filesystem
+1590954586,,ui,message,    amazon-ebs:                        noarch 1.44-8.amzn2                     amzn2-core  10 k
+1590954586,,ui,message,    amazon-ebs:  fribidi               x86_64 1.0.2-1.amzn2.1                  amzn2-core  79 k
+1590954586,,ui,message,    amazon-ebs:  gdk-pixbuf2           x86_64 2.36.12-3.amzn2                  amzn2-core 568 k
+1590954586,,ui,message,    amazon-ebs:  giflib                x86_64 4.1.6-9.amzn2.0.2                amzn2-core  40 k
+1590954586,,ui,message,    amazon-ebs:  graphite2             x86_64 1.3.10-1.amzn2.0.2               amzn2-core 115 k
+1590954586,,ui,message,    amazon-ebs:  gtk-update-icon-cache x86_64 3.22.30-3.amzn2                  amzn2-core  26 k
+1590954586,,ui,message,    amazon-ebs:  gtk2                  x86_64 2.24.31-1.amzn2.0.2              amzn2-core 3.4 M
+1590954586,,ui,message,    amazon-ebs:  harfbuzz              x86_64 1.7.5-2.amzn2                    amzn2-core 279 k
+1590954586,,ui,message,    amazon-ebs:  hicolor-icon-theme    noarch 0.12-7.amzn2                     amzn2-core  43 k
+1590954586,,ui,message,    amazon-ebs:  jasper-libs           x86_64 1.900.1-33.amzn2                 amzn2-core 150 k
+1590954586,,ui,message,    amazon-ebs:  java-1.8.0-openjdk-headless
+1590954586,,ui,message,    amazon-ebs:                        x86_64 1:1.8.0.252.b09-2.amzn2.0.1      amzn2-core  32 M
+1590954586,,ui,message,    amazon-ebs:  javapackages-tools    noarch 3.4.1-11.amzn2                   amzn2-core  73 k
+1590954586,,ui,message,    amazon-ebs:  libICE                x86_64 1.0.9-9.amzn2.0.2                amzn2-core  67 k
+1590954586,,ui,message,    amazon-ebs:  libSM                 x86_64 1.2.2-2.amzn2.0.2                amzn2-core  39 k
+1590954586,,ui,message,    amazon-ebs:  libX11                x86_64 1.6.7-2.amzn2                    amzn2-core 614 k
+1590954586,,ui,message,    amazon-ebs:  libX11-common         noarch 1.6.7-2.amzn2                    amzn2-core 164 k
+1590954586,,ui,message,    amazon-ebs:  libXau                x86_64 1.0.8-2.1.amzn2.0.2              amzn2-core  29 k
+1590954586,,ui,message,    amazon-ebs:  libXcomposite         x86_64 0.4.4-4.1.amzn2.0.2              amzn2-core  22 k
+1590954586,,ui,message,    amazon-ebs:  libXcursor            x86_64 1.1.15-1.amzn2                   amzn2-core  30 k
+1590954586,,ui,message,    amazon-ebs:  libXdamage            x86_64 1.1.4-4.1.amzn2.0.2              amzn2-core  20 k
+1590954586,,ui,message,    amazon-ebs:  libXext               x86_64 1.3.3-3.amzn2.0.2                amzn2-core  39 k
+1590954586,,ui,message,    amazon-ebs:  libXfixes             x86_64 5.0.3-1.amzn2.0.2                amzn2-core  18 k
+1590954586,,ui,message,    amazon-ebs:  libXft                x86_64 2.3.2-2.amzn2.0.2                amzn2-core  60 k
+1590954586,,ui,message,    amazon-ebs:  libXi                 x86_64 1.7.9-1.amzn2.0.2                amzn2-core  41 k
+1590954586,,ui,message,    amazon-ebs:  libXinerama           x86_64 1.1.3-2.1.amzn2.0.2              amzn2-core  14 k
+1590954586,,ui,message,    amazon-ebs:  libXrandr             x86_64 1.5.1-2.amzn2.0.3                amzn2-core  27 k
+1590954586,,ui,message,    amazon-ebs:  libXrender            x86_64 0.9.10-1.amzn2.0.2               amzn2-core  26 k
+1590954586,,ui,message,    amazon-ebs:  libXtst               x86_64 1.2.3-1.amzn2.0.2                amzn2-core  20 k
+1590954586,,ui,message,    amazon-ebs:  libXxf86vm            x86_64 1.1.4-1.amzn2.0.2                amzn2-core  17 k
+1590954586,,ui,message,    amazon-ebs:  libfontenc            x86_64 1.1.3-3.amzn2.0.2                amzn2-core  31 k
+1590954586,,ui,message,    amazon-ebs:  libglvnd              x86_64 1:1.0.1-0.1.git5baa1e5.amzn2.0.1 amzn2-core  89 k
+1590954586,,ui,message,    amazon-ebs:  libglvnd-egl          x86_64 1:1.0.1-0.1.git5baa1e5.amzn2.0.1 amzn2-core  43 k
+1590954586,,ui,message,    amazon-ebs:  libglvnd-glx          x86_64 1:1.0.1-0.1.git5baa1e5.amzn2.0.1 amzn2-core 125 k
+1590954586,,ui,message,    amazon-ebs:  libthai               x86_64 0.1.14-9.amzn2.0.2               amzn2-core 187 k
+1590954586,,ui,message,    amazon-ebs:  libwayland-client     x86_64 1.17.0-1.amzn2                   amzn2-core  34 k
+1590954586,,ui,message,    amazon-ebs:  libwayland-server     x86_64 1.17.0-1.amzn2                   amzn2-core  40 k
+1590954586,,ui,message,    amazon-ebs:  libxcb                x86_64 1.12-1.amzn2.0.2                 amzn2-core 216 k
+1590954586,,ui,message,    amazon-ebs:  libxshmfence          x86_64 1.2-1.amzn2.0.2                  amzn2-core 7.2 k
+1590954586,,ui,message,    amazon-ebs:  libxslt               x86_64 1.1.28-5.amzn2.0.2               amzn2-core 243 k
+1590954586,,ui,message,    amazon-ebs:  lksctp-tools          x86_64 1.0.17-2.amzn2.0.2               amzn2-core  88 k
+1590954586,,ui,message,    amazon-ebs:  mesa-libEGL           x86_64 18.3.4-5.amzn2.0.1               amzn2-core 108 k
+1590954586,,ui,message,    amazon-ebs:  mesa-libGL            x86_64 18.3.4-5.amzn2.0.1               amzn2-core 162 k
+1590954586,,ui,message,    amazon-ebs:  mesa-libgbm           x86_64 18.3.4-5.amzn2.0.1               amzn2-core  38 k
+1590954586,,ui,message,    amazon-ebs:  mesa-libglapi         x86_64 18.3.4-5.amzn2.0.1               amzn2-core  45 k
+1590954586,,ui,message,    amazon-ebs:  pango                 x86_64 1.42.4-4.amzn2                   amzn2-core 280 k
+1590954586,,ui,message,    amazon-ebs:  pcsc-lite-libs        x86_64 1.8.8-7.amzn2                    amzn2-core  35 k
+1590954586,,ui,message,    amazon-ebs:  pixman                x86_64 0.34.0-1.amzn2.0.2               amzn2-core 254 k
+1590954586,,ui,message,    amazon-ebs:  python-javapackages   noarch 3.4.1-11.amzn2                   amzn2-core  31 k
+1590954586,,ui,message,    amazon-ebs:  python-lxml           x86_64 3.2.1-4.amzn2.0.2                amzn2-core 1.0 M
+1590954586,,ui,message,    amazon-ebs:  ttmkfdir              x86_64 3.0.9-42.amzn2.0.2               amzn2-core  50 k
+1590954586,,ui,message,    amazon-ebs:  tzdata-java           noarch 2019c-1.amzn2                    amzn2-core 187 k
+1590954586,,ui,message,    amazon-ebs:  xorg-x11-font-utils   x86_64 1:7.5-21.amzn2                   amzn2-core 103 k
+1590954586,,ui,message,    amazon-ebs:  xorg-x11-fonts-Type1  noarch 7.5-9.amzn2                      amzn2-core 521 k
+1590954586,,ui,message,    amazon-ebs:
+1590954586,,ui,message,    amazon-ebs: Transaction Summary
+1590954586,,ui,message,    amazon-ebs: ================================================================================
+1590954586,,ui,message,    amazon-ebs: Install  2 Packages (+63 Dependent packages)
+1590954586,,ui,message,    amazon-ebs:
+1590954586,,ui,message,    amazon-ebs: Total download size: 46 M
+1590954586,,ui,message,    amazon-ebs: Installed size: 151 M
+1590954586,,ui,message,    amazon-ebs: Downloading packages:
+1590954587,,ui,message,    amazon-ebs: --------------------------------------------------------------------------------
+1590954587,,ui,message,    amazon-ebs: Total                                               56 MB/s |  46 MB  00:00
+1590954587,,ui,message,    amazon-ebs: Running transaction check
+1590954587,,ui,message,    amazon-ebs: Running transaction test
+1590954588,,ui,message,    amazon-ebs: Transaction test succeeded
+1590954588,,ui,message,    amazon-ebs: Running transaction
+1590954589,,ui,message,    amazon-ebs:   Installing : mesa-libglapi-18.3.4-5.amzn2.0.1.x86_64                     1/65
+1590954589,,ui,message,    amazon-ebs:   Installing : libICE-1.0.9-9.amzn2.0.2.x86_64                             2/65
+1590954589,,ui,message,    amazon-ebs:   Installing : fontpackages-filesystem-1.44-8.amzn2.noarch                 3/65
+1590954589,,ui,message,    amazon-ebs:   Installing : 1:libglvnd-1.0.1-0.1.git5baa1e5.amzn2.0.1.x86_64            4/65
+1590954589,,ui,message,    amazon-ebs:   Installing : libxshmfence-1.2-1.amzn2.0.2.x86_64                         5/65
+1590954589,,ui,message,    amazon-ebs:   Installing : libxslt-1.1.28-5.amzn2.0.2.x86_64                           6/65
+1590954589,,ui,message,    amazon-ebs:   Installing : libwayland-server-1.17.0-1.amzn2.x86_64                     7/65
+1590954589,,ui,message,    amazon-ebs:   Installing : mesa-libgbm-18.3.4-5.amzn2.0.1.x86_64                       8/65
+1590954589,,ui,message,    amazon-ebs:   Installing : python-lxml-3.2.1-4.amzn2.0.2.x86_64                        9/65
+1590954589,,ui,message,    amazon-ebs:   Installing : python-javapackages-3.4.1-11.amzn2.noarch                  10/65
+1590954589,,ui,message,    amazon-ebs:   Installing : javapackages-tools-3.4.1-11.amzn2.noarch                   11/65
+1590954589,,ui,message,    amazon-ebs:   Installing : dejavu-fonts-common-2.33-6.amzn2.noarch                    12/65
+1590954589,,ui,message,    amazon-ebs:   Installing : dejavu-sans-fonts-2.33-6.amzn2.noarch                      13/65
+1590954591,,ui,message,    amazon-ebs:   Installing : fontconfig-2.13.0-4.3.amzn2.x86_64                         14/65
+1590954591,,ui,message,    amazon-ebs:   Installing : libSM-1.2.2-2.amzn2.0.2.x86_64                             15/65
+1590954591,,ui,message,    amazon-ebs:   Installing : avahi-libs-0.6.31-19.amzn2.0.1.x86_64                      16/65
+1590954591,,ui,message,    amazon-ebs:   Installing : 1:cups-libs-1.6.3-40.amzn2.x86_64                          17/65
+1590954591,,ui,message,    amazon-ebs:   Installing : graphite2-1.3.10-1.amzn2.0.2.x86_64                        18/65
+1590954591,,ui,message,    amazon-ebs:   Installing : harfbuzz-1.7.5-2.amzn2.x86_64                              19/65
+1590954591,,ui,message,    amazon-ebs:   Installing : libX11-common-1.6.7-2.amzn2.noarch                         20/65
+1590954591,,ui,message,    amazon-ebs:   Installing : alsa-lib-1.1.4.1-2.amzn2.x86_64                            21/65
+1590954591,,ui,message,    amazon-ebs:   Installing : copy-jdk-configs-3.3-10.amzn2.noarch                       22/65
+1590954591,,ui,message,    amazon-ebs:   Installing : pcsc-lite-libs-1.8.8-7.amzn2.x86_64                        23/65
+1590954591,,ui,message,    amazon-ebs:   Installing : fribidi-1.0.2-1.amzn2.1.x86_64                             24/65
+1590954591,,ui,message,    amazon-ebs:   Installing : libwayland-client-1.17.0-1.amzn2.x86_64                    25/65
+1590954591,,ui,message,    amazon-ebs:   Installing : hicolor-icon-theme-0.12-7.amzn2.noarch                     26/65
+1590954591,,ui,message,    amazon-ebs:   Installing : tzdata-java-2019c-1.amzn2.noarch                           27/65
+1590954591,,ui,message,    amazon-ebs:   Installing : atk-2.22.0-3.amzn2.0.2.x86_64                              28/65
+1590954591,,ui,message,    amazon-ebs:   Installing : libthai-0.1.14-9.amzn2.0.2.x86_64                          29/65
+1590954591,,ui,message,    amazon-ebs:   Installing : libfontenc-1.1.3-3.amzn2.0.2.x86_64                        30/65
+1590954591,,ui,message,    amazon-ebs:   Installing : 1:xorg-x11-font-utils-7.5-21.amzn2.x86_64                  31/65
+1590954591,,ui,message,    amazon-ebs:   Installing : libXau-1.0.8-2.1.amzn2.0.2.x86_64                          32/65
+1590954591,,ui,message,    amazon-ebs:   Installing : libxcb-1.12-1.amzn2.0.2.x86_64                             33/65
+1590954591,,ui,message,    amazon-ebs:   Installing : libX11-1.6.7-2.amzn2.x86_64                                34/65
+1590954591,,ui,message,    amazon-ebs:   Installing : libXext-1.3.3-3.amzn2.0.2.x86_64                           35/65
+1590954591,,ui,message,    amazon-ebs:   Installing : libXrender-0.9.10-1.amzn2.0.2.x86_64                       36/65
+1590954591,,ui,message,    amazon-ebs:   Installing : libXfixes-5.0.3-1.amzn2.0.2.x86_64                         37/65
+1590954591,,ui,message,    amazon-ebs:   Installing : libXi-1.7.9-1.amzn2.0.2.x86_64                             38/65
+1590954591,,ui,message,    amazon-ebs:   Installing : libXdamage-1.1.4-4.1.amzn2.0.2.x86_64                      39/65
+1590954591,,ui,message,    amazon-ebs:   Installing : libXcomposite-0.4.4-4.1.amzn2.0.2.x86_64                   40/65
+1590954591,,ui,message,    amazon-ebs:   Installing : libXtst-1.2.3-1.amzn2.0.2.x86_64                           41/65
+1590954591,,ui,message,    amazon-ebs:   Installing : libXcursor-1.1.15-1.amzn2.x86_64                           42/65
+1590954591,,ui,message,    amazon-ebs:   Installing : libXrandr-1.5.1-2.amzn2.0.3.x86_64                         43/65
+1590954591,,ui,message,    amazon-ebs:   Installing : libXft-2.3.2-2.amzn2.0.2.x86_64                            44/65
+1590954591,,ui,message,    amazon-ebs:   Installing : libXinerama-1.1.3-2.1.amzn2.0.2.x86_64                     45/65
+1590954591,,ui,message,    amazon-ebs:   Installing : libXxf86vm-1.1.4-1.amzn2.0.2.x86_64                        46/65
+1590954591,,ui,message,    amazon-ebs:   Installing : 1:libglvnd-glx-1.0.1-0.1.git5baa1e5.amzn2.0.1.x86_64       47/65
+1590954591,,ui,message,    amazon-ebs:   Installing : mesa-libGL-18.3.4-5.amzn2.0.1.x86_64                       48/65
+1590954591,,ui,message,    amazon-ebs:   Installing : 1:libglvnd-egl-1.0.1-0.1.git5baa1e5.amzn2.0.1.x86_64       49/65
+1590954592,,ui,message,    amazon-ebs:   Installing : mesa-libEGL-18.3.4-5.amzn2.0.1.x86_64                      50/65
+1590954592,,ui,message,    amazon-ebs:   Installing : giflib-4.1.6-9.amzn2.0.2.x86_64                            51/65
+1590954593,,ui,message,    amazon-ebs:   Installing : jasper-libs-1.900.1-33.amzn2.x86_64                        52/65
+1590954593,,ui,message,    amazon-ebs:   Installing : gdk-pixbuf2-2.36.12-3.amzn2.x86_64                         53/65
+1590954593,,ui,message,    amazon-ebs:   Installing : gtk-update-icon-cache-3.22.30-3.amzn2.x86_64               54/65
+1590954593,,ui,message,    amazon-ebs:   Installing : ttmkfdir-3.0.9-42.amzn2.0.2.x86_64                         55/65
+1590954593,,ui,message,    amazon-ebs:   Installing : xorg-x11-fonts-Type1-7.5-9.amzn2.noarch                    56/65
+1590954596,,ui,message,    amazon-ebs:   Installing : lksctp-tools-1.0.17-2.amzn2.0.2.x86_64                     57/65
+1590954597,,ui,message,    amazon-ebs:   Installing : 1:java-1.8.0-openjdk-headless-1.8.0.252.b09-2.amzn2.0.1.   58/65
+1590954597,,ui,message,    amazon-ebs:   Installing : pixman-0.34.0-1.amzn2.0.2.x86_64                           59/65
+1590954597,,ui,message,    amazon-ebs:   Installing : cairo-1.15.12-4.amzn2.x86_64                               60/65
+1590954597,,ui,message,    amazon-ebs:   Installing : pango-1.42.4-4.amzn2.x86_64                                61/65
+1590954597,,ui,message,    amazon-ebs:   Installing : gtk2-2.24.31-1.amzn2.0.2.x86_64                            62/65
+1590954597,,ui,message,    amazon-ebs:   Installing : aws-cli-plugin-cloudwatch-logs-1.4.6-1.amzn2.0.1.noarch    63/65
+1590954599,,ui,message,    amazon-ebs:   Installing : awslogs-1.1.4-3.amzn2.noarch                               64/65
+1590954599,,ui,message,    amazon-ebs:   Installing : 1:java-1.8.0-openjdk-1.8.0.252.b09-2.amzn2.0.1.x86_64      65/65
+1590954599,,ui,message,    amazon-ebs:   Verifying  : libSM-1.2.2-2.amzn2.0.2.x86_64                              1/65
+1590954599,,ui,message,    amazon-ebs:   Verifying  : libwayland-server-1.17.0-1.amzn2.x86_64                     2/65
+1590954599,,ui,message,    amazon-ebs:   Verifying  : libX11-1.6.7-2.amzn2.x86_64                                 3/65
+1590954599,,ui,message,    amazon-ebs:   Verifying  : libxslt-1.1.28-5.amzn2.0.2.x86_64                           4/65
+1590954599,,ui,message,    amazon-ebs:   Verifying  : libxshmfence-1.2-1.amzn2.0.2.x86_64                         5/65
+1590954599,,ui,message,    amazon-ebs:   Verifying  : awslogs-1.1.4-3.amzn2.noarch                                6/65
+1590954599,,ui,message,    amazon-ebs:   Verifying  : 1:libglvnd-1.0.1-0.1.git5baa1e5.amzn2.0.1.x86_64            7/65
+1590954599,,ui,message,    amazon-ebs:   Verifying  : 1:libglvnd-egl-1.0.1-0.1.git5baa1e5.amzn2.0.1.x86_64        8/65
+1590954599,,ui,message,    amazon-ebs:   Verifying  : fontpackages-filesystem-1.44-8.amzn2.noarch                 9/65
+1590954599,,ui,message,    amazon-ebs:   Verifying  : mesa-libEGL-18.3.4-5.amzn2.0.1.x86_64                      10/65
+1590954599,,ui,message,    amazon-ebs:   Verifying  : aws-cli-plugin-cloudwatch-logs-1.4.6-1.amzn2.0.1.noarch    11/65
+1590954599,,ui,message,    amazon-ebs:   Verifying  : libXdamage-1.1.4-4.1.amzn2.0.2.x86_64                      12/65
+1590954599,,ui,message,    amazon-ebs:   Verifying  : pango-1.42.4-4.amzn2.x86_64                                13/65
+1590954599,,ui,message,    amazon-ebs:   Verifying  : pixman-0.34.0-1.amzn2.0.2.x86_64                           14/65
+1590954599,,ui,message,    amazon-ebs:   Verifying  : libxcb-1.12-1.amzn2.0.2.x86_64                             15/65
+1590954599,,ui,message,    amazon-ebs:   Verifying  : libXrandr-1.5.1-2.amzn2.0.3.x86_64                         16/65
+1590954599,,ui,message,    amazon-ebs:   Verifying  : mesa-libGL-18.3.4-5.amzn2.0.1.x86_64                       17/65
+1590954599,,ui,message,    amazon-ebs:   Verifying  : libXext-1.3.3-3.amzn2.0.2.x86_64                           18/65
+1590954599,,ui,message,    amazon-ebs:   Verifying  : mesa-libglapi-18.3.4-5.amzn2.0.1.x86_64                    19/65
+1590954599,,ui,message,    amazon-ebs:   Verifying  : lksctp-tools-1.0.17-2.amzn2.0.2.x86_64                     20/65
+1590954599,,ui,message,    amazon-ebs:   Verifying  : cairo-1.15.12-4.amzn2.x86_64                               21/65
+1590954599,,ui,message,    amazon-ebs:   Verifying  : libXcursor-1.1.15-1.amzn2.x86_64                           22/65
+1590954599,,ui,message,    amazon-ebs:   Verifying  : ttmkfdir-3.0.9-42.amzn2.0.2.x86_64                         23/65
+1590954599,,ui,message,    amazon-ebs:   Verifying  : python-lxml-3.2.1-4.amzn2.0.2.x86_64                       24/65
+1590954599,,ui,message,    amazon-ebs:   Verifying  : gtk-update-icon-cache-3.22.30-3.amzn2.x86_64               25/65
+1590954599,,ui,message,    amazon-ebs:   Verifying  : libXcomposite-0.4.4-4.1.amzn2.0.2.x86_64                   26/65
+1590954599,,ui,message,    amazon-ebs:   Verifying  : dejavu-fonts-common-2.33-6.amzn2.noarch                    27/65
+1590954599,,ui,message,    amazon-ebs:   Verifying  : 1:cups-libs-1.6.3-40.amzn2.x86_64                          28/65
+1590954599,,ui,message,    amazon-ebs:   Verifying  : jasper-libs-1.900.1-33.amzn2.x86_64                        29/65
+1590954599,,ui,message,    amazon-ebs:   Verifying  : libXau-1.0.8-2.1.amzn2.0.2.x86_64                          30/65
+1590954599,,ui,message,    amazon-ebs:   Verifying  : libfontenc-1.1.3-3.amzn2.0.2.x86_64                        31/65
+1590954599,,ui,message,    amazon-ebs:   Verifying  : libthai-0.1.14-9.amzn2.0.2.x86_64                          32/65
+1590954599,,ui,message,    amazon-ebs:   Verifying  : xorg-x11-fonts-Type1-7.5-9.amzn2.noarch                    33/65
+1590954599,,ui,message,    amazon-ebs:   Verifying  : atk-2.22.0-3.amzn2.0.2.x86_64                              34/65
+1590954599,,ui,message,    amazon-ebs:   Verifying  : gtk2-2.24.31-1.amzn2.0.2.x86_64                            35/65
+1590954599,,ui,message,    amazon-ebs:   Verifying  : libXrender-0.9.10-1.amzn2.0.2.x86_64                       36/65
+1590954599,,ui,message,    amazon-ebs:   Verifying  : 1:libglvnd-glx-1.0.1-0.1.git5baa1e5.amzn2.0.1.x86_64       37/65
+1590954599,,ui,message,    amazon-ebs:   Verifying  : 1:java-1.8.0-openjdk-headless-1.8.0.252.b09-2.amzn2.0.1.   38/65
+1590954599,,ui,message,    amazon-ebs:   Verifying  : dejavu-sans-fonts-2.33-6.amzn2.noarch                      39/65
+1590954599,,ui,message,    amazon-ebs:   Verifying  : fontconfig-2.13.0-4.3.amzn2.x86_64                         40/65
+1590954599,,ui,message,    amazon-ebs:   Verifying  : tzdata-java-2019c-1.amzn2.noarch                           41/65
+1590954599,,ui,message,    amazon-ebs:   Verifying  : gdk-pixbuf2-2.36.12-3.amzn2.x86_64                         42/65
+1590954599,,ui,message,    amazon-ebs:   Verifying  : hicolor-icon-theme-0.12-7.amzn2.noarch                     43/65
+1590954599,,ui,message,    amazon-ebs:   Verifying  : harfbuzz-1.7.5-2.amzn2.x86_64                              44/65
+1590954599,,ui,message,    amazon-ebs:   Verifying  : mesa-libgbm-18.3.4-5.amzn2.0.1.x86_64                      45/65
+1590954599,,ui,message,    amazon-ebs:   Verifying  : giflib-4.1.6-9.amzn2.0.2.x86_64                            46/65
+1590954599,,ui,message,    amazon-ebs:   Verifying  : libXinerama-1.1.3-2.1.amzn2.0.2.x86_64                     47/65
+1590954599,,ui,message,    amazon-ebs:   Verifying  : libXi-1.7.9-1.amzn2.0.2.x86_64                             48/65
+1590954599,,ui,message,    amazon-ebs:   Verifying  : libXxf86vm-1.1.4-1.amzn2.0.2.x86_64                        49/65
+1590954599,,ui,message,    amazon-ebs:   Verifying  : libwayland-client-1.17.0-1.amzn2.x86_64                    50/65
+1590954599,,ui,message,    amazon-ebs:   Verifying  : fribidi-1.0.2-1.amzn2.1.x86_64                             51/65
+1590954599,,ui,message,    amazon-ebs:   Verifying  : python-javapackages-3.4.1-11.amzn2.noarch                  52/65
+1590954599,,ui,message,    amazon-ebs:   Verifying  : pcsc-lite-libs-1.8.8-7.amzn2.x86_64                        53/65
+1590954599,,ui,message,    amazon-ebs:   Verifying  : libXtst-1.2.3-1.amzn2.0.2.x86_64                           54/65
+1590954599,,ui,message,    amazon-ebs:   Verifying  : libXft-2.3.2-2.amzn2.0.2.x86_64                            55/65
+1590954599,,ui,message,    amazon-ebs:   Verifying  : copy-jdk-configs-3.3-10.amzn2.noarch                       56/65
+1590954599,,ui,message,    amazon-ebs:   Verifying  : alsa-lib-1.1.4.1-2.amzn2.x86_64                            57/65
+1590954599,,ui,message,    amazon-ebs:   Verifying  : 1:java-1.8.0-openjdk-1.8.0.252.b09-2.amzn2.0.1.x86_64      58/65
+1590954599,,ui,message,    amazon-ebs:   Verifying  : libX11-common-1.6.7-2.amzn2.noarch                         59/65
+1590954599,,ui,message,    amazon-ebs:   Verifying  : libXfixes-5.0.3-1.amzn2.0.2.x86_64                         60/65
+1590954599,,ui,message,    amazon-ebs:   Verifying  : libICE-1.0.9-9.amzn2.0.2.x86_64                            61/65
+1590954599,,ui,message,    amazon-ebs:   Verifying  : graphite2-1.3.10-1.amzn2.0.2.x86_64                        62/65
+1590954599,,ui,message,    amazon-ebs:   Verifying  : 1:xorg-x11-font-utils-7.5-21.amzn2.x86_64                  63/65
+1590954599,,ui,message,    amazon-ebs:   Verifying  : avahi-libs-0.6.31-19.amzn2.0.1.x86_64                      64/65
+1590954599,,ui,message,    amazon-ebs:   Verifying  : javapackages-tools-3.4.1-11.amzn2.noarch                   65/65
+1590954599,,ui,message,    amazon-ebs:
+1590954599,,ui,message,    amazon-ebs: Installed:
+1590954599,,ui,message,    amazon-ebs:   awslogs.noarch 0:1.1.4-3.amzn2
+1590954599,,ui,message,    amazon-ebs:   java-1.8.0-openjdk.x86_64 1:1.8.0.252.b09-2.amzn2.0.1
+1590954599,,ui,message,    amazon-ebs:
+1590954599,,ui,message,    amazon-ebs: Dependency Installed:
+1590954599,,ui,message,    amazon-ebs:   alsa-lib.x86_64 0:1.1.4.1-2.amzn2
+1590954599,,ui,message,    amazon-ebs:   atk.x86_64 0:2.22.0-3.amzn2.0.2
+1590954599,,ui,message,    amazon-ebs:   avahi-libs.x86_64 0:0.6.31-19.amzn2.0.1
+1590954599,,ui,message,    amazon-ebs:   aws-cli-plugin-cloudwatch-logs.noarch 0:1.4.6-1.amzn2.0.1
+1590954599,,ui,message,    amazon-ebs:   cairo.x86_64 0:1.15.12-4.amzn2
+1590954599,,ui,message,    amazon-ebs:   copy-jdk-configs.noarch 0:3.3-10.amzn2
+1590954599,,ui,message,    amazon-ebs:   cups-libs.x86_64 1:1.6.3-40.amzn2
+1590954599,,ui,message,    amazon-ebs:   dejavu-fonts-common.noarch 0:2.33-6.amzn2
+1590954599,,ui,message,    amazon-ebs:   dejavu-sans-fonts.noarch 0:2.33-6.amzn2
+1590954599,,ui,message,    amazon-ebs:   fontconfig.x86_64 0:2.13.0-4.3.amzn2
+1590954599,,ui,message,    amazon-ebs:   fontpackages-filesystem.noarch 0:1.44-8.amzn2
+1590954599,,ui,message,    amazon-ebs:   fribidi.x86_64 0:1.0.2-1.amzn2.1
+1590954599,,ui,message,    amazon-ebs:   gdk-pixbuf2.x86_64 0:2.36.12-3.amzn2
+1590954599,,ui,message,    amazon-ebs:   giflib.x86_64 0:4.1.6-9.amzn2.0.2
+1590954599,,ui,message,    amazon-ebs:   graphite2.x86_64 0:1.3.10-1.amzn2.0.2
+1590954599,,ui,message,    amazon-ebs:   gtk-update-icon-cache.x86_64 0:3.22.30-3.amzn2
+1590954599,,ui,message,    amazon-ebs:   gtk2.x86_64 0:2.24.31-1.amzn2.0.2
+1590954599,,ui,message,    amazon-ebs:   harfbuzz.x86_64 0:1.7.5-2.amzn2
+1590954599,,ui,message,    amazon-ebs:   hicolor-icon-theme.noarch 0:0.12-7.amzn2
+1590954599,,ui,message,    amazon-ebs:   jasper-libs.x86_64 0:1.900.1-33.amzn2
+1590954599,,ui,message,    amazon-ebs:   java-1.8.0-openjdk-headless.x86_64 1:1.8.0.252.b09-2.amzn2.0.1
+1590954599,,ui,message,    amazon-ebs:   javapackages-tools.noarch 0:3.4.1-11.amzn2
+1590954599,,ui,message,    amazon-ebs:   libICE.x86_64 0:1.0.9-9.amzn2.0.2
+1590954599,,ui,message,    amazon-ebs:   libSM.x86_64 0:1.2.2-2.amzn2.0.2
+1590954599,,ui,message,    amazon-ebs:   libX11.x86_64 0:1.6.7-2.amzn2
+1590954599,,ui,message,    amazon-ebs:   libX11-common.noarch 0:1.6.7-2.amzn2
+1590954599,,ui,message,    amazon-ebs:   libXau.x86_64 0:1.0.8-2.1.amzn2.0.2
+1590954599,,ui,message,    amazon-ebs:   libXcomposite.x86_64 0:0.4.4-4.1.amzn2.0.2
+1590954599,,ui,message,    amazon-ebs:   libXcursor.x86_64 0:1.1.15-1.amzn2
+1590954599,,ui,message,    amazon-ebs:   libXdamage.x86_64 0:1.1.4-4.1.amzn2.0.2
+1590954599,,ui,message,    amazon-ebs:   libXext.x86_64 0:1.3.3-3.amzn2.0.2
+1590954599,,ui,message,    amazon-ebs:   libXfixes.x86_64 0:5.0.3-1.amzn2.0.2
+1590954599,,ui,message,    amazon-ebs:   libXft.x86_64 0:2.3.2-2.amzn2.0.2
+1590954599,,ui,message,    amazon-ebs:   libXi.x86_64 0:1.7.9-1.amzn2.0.2
+1590954599,,ui,message,    amazon-ebs:   libXinerama.x86_64 0:1.1.3-2.1.amzn2.0.2
+1590954599,,ui,message,    amazon-ebs:   libXrandr.x86_64 0:1.5.1-2.amzn2.0.3
+1590954599,,ui,message,    amazon-ebs:   libXrender.x86_64 0:0.9.10-1.amzn2.0.2
+1590954599,,ui,message,    amazon-ebs:   libXtst.x86_64 0:1.2.3-1.amzn2.0.2
+1590954599,,ui,message,    amazon-ebs:   libXxf86vm.x86_64 0:1.1.4-1.amzn2.0.2
+1590954599,,ui,message,    amazon-ebs:   libfontenc.x86_64 0:1.1.3-3.amzn2.0.2
+1590954599,,ui,message,    amazon-ebs:   libglvnd.x86_64 1:1.0.1-0.1.git5baa1e5.amzn2.0.1
+1590954599,,ui,message,    amazon-ebs:   libglvnd-egl.x86_64 1:1.0.1-0.1.git5baa1e5.amzn2.0.1
+1590954599,,ui,message,    amazon-ebs:   libglvnd-glx.x86_64 1:1.0.1-0.1.git5baa1e5.amzn2.0.1
+1590954599,,ui,message,    amazon-ebs:   libthai.x86_64 0:0.1.14-9.amzn2.0.2
+1590954599,,ui,message,    amazon-ebs:   libwayland-client.x86_64 0:1.17.0-1.amzn2
+1590954599,,ui,message,    amazon-ebs:   libwayland-server.x86_64 0:1.17.0-1.amzn2
+1590954599,,ui,message,    amazon-ebs:   libxcb.x86_64 0:1.12-1.amzn2.0.2
+1590954599,,ui,message,    amazon-ebs:   libxshmfence.x86_64 0:1.2-1.amzn2.0.2
+1590954599,,ui,message,    amazon-ebs:   libxslt.x86_64 0:1.1.28-5.amzn2.0.2
+1590954599,,ui,message,    amazon-ebs:   lksctp-tools.x86_64 0:1.0.17-2.amzn2.0.2
+1590954599,,ui,message,    amazon-ebs:   mesa-libEGL.x86_64 0:18.3.4-5.amzn2.0.1
+1590954599,,ui,message,    amazon-ebs:   mesa-libGL.x86_64 0:18.3.4-5.amzn2.0.1
+1590954599,,ui,message,    amazon-ebs:   mesa-libgbm.x86_64 0:18.3.4-5.amzn2.0.1
+1590954599,,ui,message,    amazon-ebs:   mesa-libglapi.x86_64 0:18.3.4-5.amzn2.0.1
+1590954599,,ui,message,    amazon-ebs:   pango.x86_64 0:1.42.4-4.amzn2
+1590954599,,ui,message,    amazon-ebs:   pcsc-lite-libs.x86_64 0:1.8.8-7.amzn2
+1590954599,,ui,message,    amazon-ebs:   pixman.x86_64 0:0.34.0-1.amzn2.0.2
+1590954599,,ui,message,    amazon-ebs:   python-javapackages.noarch 0:3.4.1-11.amzn2
+1590954599,,ui,message,    amazon-ebs:   python-lxml.x86_64 0:3.2.1-4.amzn2.0.2
+1590954599,,ui,message,    amazon-ebs:   ttmkfdir.x86_64 0:3.0.9-42.amzn2.0.2
+1590954599,,ui,message,    amazon-ebs:   tzdata-java.noarch 0:2019c-1.amzn2
+1590954599,,ui,message,    amazon-ebs:   xorg-x11-font-utils.x86_64 1:7.5-21.amzn2
+1590954599,,ui,message,    amazon-ebs:   xorg-x11-fonts-Type1.noarch 0:7.5-9.amzn2
+1590954599,,ui,message,    amazon-ebs:
+1590954599,,ui,message,    amazon-ebs: Complete!
+1590954600,,ui,say,==> amazon-ebs: Provisioning with shell script: ./install.sh
+1590954602,,ui,error,==> amazon-ebs: Created symlink from /etc/systemd/system/multi-user.target.wants/awslogsd.service to /usr/lib/systemd/system/awslogsd.service.
+1590954602,,ui,error,==> amazon-ebs: Created symlink from /etc/systemd/system/multi-user.target.wants/helloworld.service to /usr/lib/systemd/system/helloworld.service.
+1590954602,,ui,say,==> amazon-ebs: Stopping the source instance...
+1590954602,,ui,message,    amazon-ebs: Stopping instance
+1590954603,,ui,say,==> amazon-ebs: Waiting for the instance to stop...
+1590954634,,ui,say,==> amazon-ebs: Creating AMI adevinta-app-1590954521 from instance i-08a30db886db05469
+1590954636,,ui,message,    amazon-ebs: AMI: ami-0c8c369bc5d0f3f92
+1590954636,,ui,say,==> amazon-ebs: Waiting for AMI to become ready...
+1590954714,,ui,say,==> amazon-ebs: Terminating the source AWS instance...
+1590954734,,ui,say,==> amazon-ebs: Cleaning up any extra volumes...
+1590954734,,ui,say,==> amazon-ebs: No volumes to clean up%!(PACKER_COMMA) skipping
+1590954734,,ui,say,==> amazon-ebs: Deleting temporary security group...
+1590954734,,ui,say,==> amazon-ebs: Deleting temporary keypair...
+1590954735,,ui,say,Build 'amazon-ebs' finished.
+1590954735,,ui,say,\n==> Builds finished. The artifacts of successful builds are:
+1590954735,amazon-ebs,artifact-count,1
+1590954735,amazon-ebs,artifact,0,builder-id,mitchellh.amazonebs
+1590954735,amazon-ebs,artifact,0,id,eu-west-1:ami-0c8c369bc5d0f3f92
+1590954735,amazon-ebs,artifact,0,string,AMIs were created:\neu-west-1: ami-0c8c369bc5d0f3f92\n
+1590954735,amazon-ebs,artifact,0,files-count,0
+1590954735,amazon-ebs,artifact,0,end
+1590954735,,ui,say,--> amazon-ebs: AMIs were created:\neu-west-1: ami-0c8c369bc5d0f3f92\n
